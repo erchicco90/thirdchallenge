@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height:100vh;
+    font-size:15px;
+    font-family:'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:80%;
+    gap:20px;
+    height:100%;
+}
+.top{
+    text-align: center;
+    font-size:0.8em;
+    margin-top:4.5rem;
+}
+.top h1{
+    font-weight: 200;
+}
+.top .bold{
+    font-weight: 600;
+}
+.top p{
+    margin-top:1rem;
+}
+p{
+    color:hsl(234, 12%, 34%);
+    font-weight: 400;
+}
+.cont{
+    box-shadow: 2px 2px 15px hsl(229, 6%, 66%);
+    border-radius:10px;
+}
+.box{
+    padding-top:1rem;
+    padding-left:1.6rem;
+}
+.box p{
+    font-size:0.8rem;
+}
+.first{
+    border-top:4px solid hsl(180, 62%, 55%);
+    margin-top:2.3rem;
+}
+.second{
+    border-top:4px solid hsl(0, 78%, 62%);
+}
+.third{
+    border-top:4px solid hsl(34, 97%, 64%);
+}
+.four{
+    border-top:4px solid hsl(212, 86%, 64%);
+}
+svg{
+    margin-top:25px;
+    position:relative;
+    left:70%;
+    margin-bottom:15px;
+    
+}
+@media only screen and (min-width:375px) and (max-width:1440px){
+ 
+    body{
+        margin:0;
+        overflow-x: hidden;
+        
+    }
+    .wrapper{
+        width:100%;
+        height:100%;
+        display:grid;
+        grid-template-columns:repeat(3,300px);
+        grid-template-rows:repeat(autofit, minmax(250px,1fr));
+        justify-items: center;
+        padding-top:10px;
+      
+    }
+    .cont{
+        height:200px;
+        max-width:300px;
+    }
+    .box{
+        text-align: left;
+        padding-right:10px;
+    }
+    .top{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        text-align: center;
+        margin-top:3rem;
+    }
+    .top h1{
+        font-size:2rem;
+    }
+    .top p{
+        width:75%;
+        margin:0 auto;
+    }
+    .first{
+        grid-column:1/2;
+        grid-row: 1/3;
+        margin:0;
+    }
+    .second{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-top:2rem;
+    }
+    .third{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .four{
+        grid-column: 3/4;
+        grid-row:1/3;
+    }
+    footer{
+        margin-top:10px;
+       grid-column:2/3;
+       grid-row:3/4;
+       align-self:start;
+    }
+}
