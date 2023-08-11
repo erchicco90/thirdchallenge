@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://github.com/erchicco90/thirdchallenge/blob/main/design/Four%20card%20Frontmentor.png?=true)
+https://github.com/erchicco90/thirdchallenge/blob/main/design/Four%20card%20Frontmentor.png?=true
 
 
 ### Links
